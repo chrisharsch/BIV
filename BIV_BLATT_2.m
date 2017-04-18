@@ -32,4 +32,4 @@ Low_High = stretchlim(gray_blueten);
 %% Blatt 2 Aufgabe 1f
 hist_minmax = imhist(Low_High);
 plot(hist_minmax, 'blue');
-
+lyxvkjbxvkbxcvk
