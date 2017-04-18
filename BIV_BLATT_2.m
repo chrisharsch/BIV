@@ -33,4 +33,10 @@ Low_High = stretchlim(gray_blueten);
 hist_minmax = imhist(Low_High);
 plot(hist_minmax, 'blue');
 %% Aufgabe 2a
+gray_blueten = rgb2gray(imread('blueten.jpg'));
+Low_High = stretchlim(gray_blueten)*255;
+Low_high_min = min(Low_High);
+Low_high_max = max(Low_High);
+new_gray_blueten = (((gray_blueten - Low_high_min) * (255/(Low_high_max - Low_high_min))));
+imshow(new_gray_blueten);
 
