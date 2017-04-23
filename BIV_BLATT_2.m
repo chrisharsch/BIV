@@ -39,4 +39,9 @@ Low_high_min = min(Low_High);
 Low_high_max = max(Low_High);
 new_gray_blueten = (((gray_blueten - Low_high_min) * (255/(Low_high_max - Low_high_min))));
 imshow(new_gray_blueten);
+%% Aufgabe 2b
+gray_blueten = rgb2hsi(imread('blueten.jpg'));
+gamma_gray = 255*((gray_blueten(:,:,3)/255).^0.98);
+imshow(gamma_gray);
+
 
